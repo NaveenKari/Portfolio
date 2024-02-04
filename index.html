@@ -31,7 +31,7 @@
 
         <div class="intro">
             <div id="info">
-                <p>Full Stack Developer</p>
+                <p>FullStackDeveloper</p>
                 <h1>Hi, I am <span style="color: #fca311;">Naveen</span> Kari.</h1>
             </div>
             <div id="myimage">
@@ -42,28 +42,50 @@
     </header>
     <!-- <--------about-------->
     <main>
-        <section class="about me">
+        <section class="about-me">
             <div class="about-container">
                 <div class="aboutimage">
                     <img src="images/about me.jpg" alt="">
 
                 </div>
                 <div class="aboutinfo">
-
                     <h1>About Me</h1>
-                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Atque blanditiis laboriosam,
-                        possimus
-                        facilis voluptates non id reprehenderit exercitationem assumenda saepe reiciendis veritatis
-                        molestias numquam alias! Praesentium laudantium voluptate voluptatibus reiciendis, tempora
-                        perspiciatis cupiditate earum illo maiores fugiat. Blanditiis, aliquam sapiente!</p>
+                    <div class="abinf2">
 
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Atque blanditiis laboriosam,
+                            possimus
+                            facilis voluptates non id reprehenderit exercitationem assumenda saepe reiciendis veritatis
+                            molestias numquam alias! Praesentium laudantium voluptate voluptatibus reiciendis, tempora
+                            perspiciatis cupiditate earum illo maiores fugiat. Blanditiis, aliquam sapiente!</p>
+                    </div>
 
                     <div class="tab-titles">
-                        <div class="tablinks active-link">Skills</div>
-                        <div class="tablinks active-link">Experience</div>
-                        <div class="tablinks active-link">Education</div>
+                        <div class="tablinks active-link" onclick="opentab('skills')">Skills</div>
+                        <div class="tablinks " onclick="opentab('experience')">Experience</div>
+                        <div class="tablinks " onclick="opentab('education')
+                        ">Education</div>
                     </div>
-                    <div class="tabcontents">
+                    <div class="tabcontents active-tab" id="skills">
+                        <ul>
+                            <li><span>fullstack</span><br>
+                                developing web apps</li>
+                            <li><span>fullstack</span><br>
+                                developing web apps</li>
+                            <li><span>fullstack</span><br>
+                                developing web apps</li>
+                        </ul>
+                    </div>
+                    <div class="tabcontents" id="experience">
+                        <ul>
+                            <li><span>fullstack</span><br>
+                                developing web apps</li>
+                            <li><span>fullstack</span><br>
+                                developing web apps</li>
+                            <li><span>fullstack</span><br>
+                                developing web apps</li>
+                        </ul>
+                    </div>
+                    <div class="tabcontents" id="education">
                         <ul>
                             <li><span>fullstack</span><br>
                                 developing web apps</li>
@@ -77,8 +99,88 @@
 
             </div>
         </section>
-    </main>
+        <!-- Projects section -->
+        <section>
+            <div class="projectscontainer aboutinfo">
+                <h1>Projects</h1>
+                <div class="projectitems">
+                    <div class="projects">
+                        <img src="images/CMSproject.jpg" alt="">
+                        <div class="layer">
+                            <h3>CMS</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet, repudiandae?</p>
+                            <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                        </div>
+                    </div>
+                    <div class="projects">
+                        <img src="images/IOTguard.jpeg" alt="">
+                        <div class="layer">
+                            <h3>CMS</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet, repudiandae?</p>
+                            <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                        </div>
+                    </div>
+                    <div class="projects">
+                        <img src="images/PMS.webp" alt="">
+                        <div class="layer">
+                            <h3>CMS</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet, repudiandae?</p>
+                            <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                        </div>
+                    </div>
+                </div>
 
+            </div>
+        </section>
+        <!-- Contact section -->
+        <section class="contact">
+            <div class="container">
+                <div class="row">
+                    <div class="contact-left aboutinfo">
+                        <h1>Contact Me</h1>
+                        <p><i class="fa-solid fa-envelope"></i>knaveen.edu2023@gmail.com</p>
+                        <p><i class="fa-solid fa-phone"></i>9132387387</p>
+                        <div class="socialmedia-icons">
+                            <a href=""><i class="fa-brands fa-linkedin"></i></a>
+                            <a href=""><i class="fa-brands fa-github"></i></a>
+                            <a href=""><i class="fa-brands fa-twitter"></i></a>
+                            <a href=""><i class="fa-brands fa-instagram"></i></a>
+                        </div>
+                    </div>
+                    <div class="contact-right">
+                        <form action="">
+                            <input type="text" name="Name" placeholder="Your Name" required>
+                            <input type="email" name="email" placeholder="Your Email" required>
+                            <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                            <button type="submit">Submit</button>
+
+                        </form>
+
+                    </div>
+                </div>
+            </div>
+
+
+        </section>
+
+
+    </main>
+    <script src="https://kit.fontawesome.com/6de939c1d6.js" crossorigin="anonymous"></script>
+    <script>
+        var tablinks = document.getElementsByClassName("tablinks");
+        var tabcontents = document.getElementsByClassName("tabcontents");
+
+        function opentab(tabname) {
+            for (tablink of tablinks) {
+                tablink.classList.remove("active-link");
+            }
+            for (tabcontent of tabcontents) {
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+    </script>
 </body>
 
 </html>
