@@ -2,185 +2,299 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="index.css">
-
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Honk&family=Kanit:wght@300&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="index.css">
 </head>
 
 <body>
-    <header>
-        <div id="headercontainer">
+
+  <header>
+    <div id="headercontainer">
 
 
-            <div id="logoname">
-                <img src="images/Naveenlogo1.png" alt="">
-            </div>
+      <div id="logoname">
+        <h1>Naveen.</h1>
+      </div>
 
-            <nav>
-                <ul>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">Skills</a></li>
-                    <li><a href="#">Projects</a></li>
-                    <li><a href="#">ContactMe</a></li>
-                </ul>
-            </nav>
+      <nav>
+        <ul id="sidemenu">
+          <li><a href="#">Home</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Skills</a></li>
+          <li><a href="#">Projects</a></li>
+          <li><a href="#">ContactMe</a></li>
+          <i class="fa-solid fa-circle-xmark fas" onclick="closemenu()"></i>
+        </ul>
+        <i class="fa-solid fa-bars fas" onclick="openmenu()"></i>
+      </nav>
+    </div>
+
+    <div class="intro">
+      <div id="info">
+        <h1>Hi, I am <span style="color: #fca311;">Naveen Kari.</span> </h1>
+        <p>Master's in Computer Science | Software Engineer | Frontend & Backend Developer </p>
+
+      </div>
+      <div id="myimage">
+        <img src="images/Profile picture.png" alt="">
+      </div>
+    </div>
+
+  </header>
+  <main>
+    <!-- ----------------About Section---------------------------- -->
+    <section>
+      <div class="aboutcontainer">
+        <div class="aboutimage">
+          <img src="images/about me.jpg" alt="">
+
+        </div>
+        <div class="aboutinfo">
+          <h1 class="sideheadings">About Me</h1>
+          <p>A dedicated Master's in Computer Science student with strong software development skills. Experienced in
+            HTML, CSS, JavaScript, and frameworks like Bootstrap and ReactJS. Contributed to a Job Portal Management
+            System during my internship. Certified in Python, adept at problem-solving on platforms like LeetCode. Eager
+            to bring innovation and collaboration to software development teams.</p>
+
+          <div class="tab-titles">
+            <div class="tablinks active-link" onclick="opentab('experience')">Experience</div>
+            <div class="tablinks " onclick="opentab('education')">Education</div>
+
+          </div>
+          <div class="tabcontents active-tab" id="experience">
+            <ul>
+              <li><span>Web Development Internship, Coincent.ai. &nbsp; Sep2022 – Nov2022</span><br>
+                • Collaborated with a dynamic team to implement features and functionalities for the Job Portal
+                Management System project. Technologies used are HTML, CSS, JavaScript, <br>
+                • Gained valuable insights into the software development lifecycle, from project planning and design to
+                implementation and testing. Engaged in regular code reviews and collaborated with team members to
+                maintain code quality and consistency throughout the project.
+              </li>
+
+            </ul>
+          </div>
+          <div class="tabcontents" id="education">
+            <ul>
+              <li><span>University of Central Missouri, Warrensburg, Missouri.&nbsp;&nbsp;Aug2023 - Present </span><br>
+                Masters in computer science, GPA – 3.6/4</li>
+              <li><span>Anil Neerukonda Institute of Technology & Sciences(ANITS), Andhra Pradesh, India. &nbsp;
+                  &nbsp;Aug2019 -
+                  May2023</span><br>
+                Bachelor of Technology in Computer Science Engineering, GPA – 3.96/4</li>
+
+            </ul>
+          </div>
+
         </div>
 
-        <div class="intro">
-            <div id="info">
-                <p>FullStackDeveloper</p>
-                <h1>Hi, I am <span style="color: #fca311;">Naveen</span> Kari.</h1>
+      </div>
+    </section>
+    <!-- -------------------------Skills section ------------------ -->
+
+    <section id="skills">
+      <div class="skillscontainer">
+        <div class="skillheadings">
+          <h1 class="sideheadings skill">My Skills</h1>
+        </div>
+        <div class="skillitemcontainer1">
+
+          <div class="skillsideheading">
+            <h3>FRONTEND:</h3>
+          </div>
+          <div class="skillitemcontainer2">
+
+            <div class="skillitem">
+              <h5>HTML</h5>
             </div>
-            <div id="myimage">
-                <img src="images/Profile picture.png" alt="">
+            <div class="skillitem">
+              <h5>CSS</h5>
             </div>
+            <div class="skillitem">
+              <h5>JavaScript</h5>
+            </div>
+            <div class="skillitem">
+              <h5>ReactJs</h5>
+            </div>
+            <div class="skillitem">
+              <h5>Bootstrap</h5>
+            </div>
+            <div class="skillitem">
+              <h5>TailwindCSS</h5>
+            </div>
+
+          </div>
+
+        </div>
+      </div>
+      </div>
+
+
+      <div class="skillscontainer">
+
+        <div class="skillitemcontainer1">
+          <div class="skillsideheading">
+            <h3>BACKEND:</h3>
+          </div>
+          <div class="skillitemcontainer2">
+            <div class="skillitem">
+              <h5>NodeJs</h5>
+            </div>
+            <div class="skillitem">
+              <h5>ExpressJs</h5>
+            </div>
+            <div class="skillitem">
+              <h5>Python</h5>
+            </div>
+            <div class="skillitem">
+              <h5>Flask</h5>
+            </div>
+            <div class="skillitem">
+              <h5>Java</h5>
+            </div>
+            <div class="skillitem">
+              <h5>MongoDB</h5>
+            </div>
+            <div class="skillitem">
+              <h5>MySQL</h5>
+            </div>
+
+          </div>
+        </div>
+      </div>
+      </div>
+    </section>
+
+
+    <!-- -----------------------Project Section ---------------------------------- -->
+    <section class="projectsection">
+      <div class="projectscontainer ">
+        <h1 class="sideheadings">Projects</h1>
+        <div class="projectitems">
+          <div class="projects">
+            <img src="images/CMSproject.jpg" alt="">
+            <div class="layer">
+              <h3>Payroll Management Sytem</h3>
+              <p>The Project is designed to efficiently handle an organization's employee financial records. It
+                encompasses functionalities to manage salaries, deductions, leave requests, and more, ensuring timely
+                and accurate payment disbursement.
+                Technologies: HTML, CSS, Flask, MongoDB, Python.
+              </p>
+              <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+            </div>
+          </div>
+          <div class="projects">
+            <img src="images/IOTguard.jpeg" alt="">
+            <div class="layer">
+              <h3>IoT GUARD Using Blockchain
+              </h3>
+              <p>It simplifies a lot of problems of security because we are using technology which is well known for its
+                security and transparency.
+                Built a model that demonstrates the above process using ESP devices in which Blockchain server was built
+                using Python for small scale level. Technologies : Python, Arduino, Micro Python, JSON, Flask.
+              </p>
+              <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+            </div>
+          </div>
+          <div class="projects">
+            <img src="images/PMS.webp" alt="">
+            <div class="layer">
+              <h3>Community Management System</h3>
+              <p>The aim is to simplify life for everyone in a gated community, from residents and management
+                committee to security guards and facility managers.
+                It reduces many hassles like authorizing entry of delivery executives, paying maintenance bills,
+                availing home service.
+                Technologies: HTML, CSS, Python, Flask, SQL.
+              </p>
+              <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+            </div>
+          </div>
+          <div class="projects">
+            <img src="images/PMS.webp" alt="">
+            <div class="layer">
+              <h3>Community Management System</h3>
+              <p>The aim is to simplify life for everyone in a gated community, from residents and management
+                committee to security guards and facility managers.
+                It reduces many hassles like authorizing entry of delivery executives, paying maintenance bills,
+                availing home service.
+                Technologies: HTML, CSS, Python, Flask, SQL.
+              </p>
+              <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+            </div>
+          </div>
         </div>
 
-    </header>
-    <!-- <--------about-------->
-    <main>
-        <section class="about-me">
-            <div class="about-container">
-                <div class="aboutimage">
-                    <img src="images/about me.jpg" alt="">
+      </div>
+    </section>
+    <!-- ----------------Contact section--------------------------- -->
 
-                </div>
-                <div class="aboutinfo">
-                    <h1>About Me</h1>
-                    <div class="abinf2">
-
-                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Atque blanditiis laboriosam,
-                            possimus
-                            facilis voluptates non id reprehenderit exercitationem assumenda saepe reiciendis veritatis
-                            molestias numquam alias! Praesentium laudantium voluptate voluptatibus reiciendis, tempora
-                            perspiciatis cupiditate earum illo maiores fugiat. Blanditiis, aliquam sapiente!</p>
-                    </div>
-
-                    <div class="tab-titles">
-                        <div class="tablinks active-link" onclick="opentab('skills')">Skills</div>
-                        <div class="tablinks " onclick="opentab('experience')">Experience</div>
-                        <div class="tablinks " onclick="opentab('education')
-                        ">Education</div>
-                    </div>
-                    <div class="tabcontents active-tab" id="skills">
-                        <ul>
-                            <li><span>fullstack</span><br>
-                                developing web apps</li>
-                            <li><span>fullstack</span><br>
-                                developing web apps</li>
-                            <li><span>fullstack</span><br>
-                                developing web apps</li>
-                        </ul>
-                    </div>
-                    <div class="tabcontents" id="experience">
-                        <ul>
-                            <li><span>fullstack</span><br>
-                                developing web apps</li>
-                            <li><span>fullstack</span><br>
-                                developing web apps</li>
-                            <li><span>fullstack</span><br>
-                                developing web apps</li>
-                        </ul>
-                    </div>
-                    <div class="tabcontents" id="education">
-                        <ul>
-                            <li><span>fullstack</span><br>
-                                developing web apps</li>
-                            <li><span>fullstack</span><br>
-                                developing web apps</li>
-                            <li><span>fullstack</span><br>
-                                developing web apps</li>
-                        </ul>
-                    </div>
-                </div>
-
+    <section class="contact">
+      <div class="container">
+        <div class="row">
+          <div class="contact-left aboutinfo">
+            <h1 class="sideheadings">Contact Me</h1>
+            <p><i class="fa-solid fa-envelope"></i>knaveen.edu2023@gmail.com</p>
+            <p><i class="fa-solid fa-phone"></i>9132387387</p>
+            <div class="socialmedia-icons">
+              <a href=""><i class="fa-brands fa-linkedin"></i></a>
+              <a href=""><i class="fa-brands fa-github"></i></a>
+              <a href=""><i class="fa-brands fa-twitter"></i></a>
+              <a href=""><i class="fa-brands fa-instagram"></i></a>
             </div>
-        </section>
-        <!-- Projects section -->
-        <section>
-            <div class="projectscontainer aboutinfo">
-                <h1>Projects</h1>
-                <div class="projectitems">
-                    <div class="projects">
-                        <img src="images/CMSproject.jpg" alt="">
-                        <div class="layer">
-                            <h3>CMS</h3>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet, repudiandae?</p>
-                            <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
-                        </div>
-                    </div>
-                    <div class="projects">
-                        <img src="images/IOTguard.jpeg" alt="">
-                        <div class="layer">
-                            <h3>CMS</h3>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet, repudiandae?</p>
-                            <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
-                        </div>
-                    </div>
-                    <div class="projects">
-                        <img src="images/PMS.webp" alt="">
-                        <div class="layer">
-                            <h3>CMS</h3>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet, repudiandae?</p>
-                            <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
-                        </div>
-                    </div>
-                </div>
+          </div>
+          <div class="contact-right">
+            <form action="">
+              <input type="text" name="Name" placeholder="Your Name" required>
+              <input type="email" name="email" placeholder="Your Email" required>
+              <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+              <button type="submit">Submit</button>
 
-            </div>
-        </section>
-        <!-- Contact section -->
-        <section class="contact">
-            <div class="container">
-                <div class="row">
-                    <div class="contact-left aboutinfo">
-                        <h1>Contact Me</h1>
-                        <p><i class="fa-solid fa-envelope"></i>knaveen.edu2023@gmail.com</p>
-                        <p><i class="fa-solid fa-phone"></i>9132387387</p>
-                        <div class="socialmedia-icons">
-                            <a href=""><i class="fa-brands fa-linkedin"></i></a>
-                            <a href=""><i class="fa-brands fa-github"></i></a>
-                            <a href=""><i class="fa-brands fa-twitter"></i></a>
-                            <a href=""><i class="fa-brands fa-instagram"></i></a>
-                        </div>
-                    </div>
-                    <div class="contact-right">
-                        <form action="">
-                            <input type="text" name="Name" placeholder="Your Name" required>
-                            <input type="email" name="email" placeholder="Your Email" required>
-                            <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
-                            <button type="submit">Submit</button>
+            </form>
 
-                        </form>
-
-                    </div>
-                </div>
-            </div>
+          </div>
+        </div>
+      </div>
 
 
-        </section>
+    </section>
 
 
-    </main>
-    <script src="https://kit.fontawesome.com/6de939c1d6.js" crossorigin="anonymous"></script>
-    <script>
-        var tablinks = document.getElementsByClassName("tablinks");
-        var tabcontents = document.getElementsByClassName("tabcontents");
 
-        function opentab(tabname) {
-            for (tablink of tablinks) {
-                tablink.classList.remove("active-link");
-            }
-            for (tabcontent of tabcontents) {
-                tabcontent.classList.remove("active-tab");
-            }
-            event.currentTarget.classList.add("active-link");
-            document.getElementById(tabname).classList.add("active-tab");
-        }
-    </script>
+
+
+  </main>
+  <script src="https://kit.fontawesome.com/6de939c1d6.js" crossorigin="anonymous"></script>
+  <script>
+    var tablinks = document.getElementsByClassName("tablinks");
+    var tabcontents = document.getElementsByClassName("tabcontents");
+
+    function opentab(tabname) {
+      for (tablink of tablinks) {
+        tablink.classList.remove("active-link");
+      }
+      for (tabcontent of tabcontents) {
+        tabcontent.classList.remove("active-tab");
+      }
+      event.currentTarget.classList.add("active-link");
+      document.getElementById(tabname).classList.add("active-tab");
+    }
+  </script>
+
+  <script>
+    var sidemenu = document.querySelector("#sidemenu");
+
+    function openmenu() {
+      sidemenu.style.right = "0";
+    }
+    function closemenu() {
+      sidemenu.style.right = "-200px";
+    }
+  </script>
+
 </body>
 
 </html>
