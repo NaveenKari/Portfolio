@@ -13,7 +13,7 @@
 
 <body>
 
-  <header>
+  <header id="header">
     <div id="headercontainer">
 
 
@@ -23,11 +23,11 @@
 
       <nav>
         <ul id="sidemenu">
-          <li><a href="#">Home</a></li>
-          <li><a href="#">About</a></li>
-          <li><a href="#">Skills</a></li>
-          <li><a href="#">Projects</a></li>
-          <li><a href="#">ContactMe</a></li>
+          <li><a href="#header">Home</a></li>
+          <li><a href="#aboutsection">About</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#projectsection1">Projects</a></li>
+          <li><a href="#contact">ContactMe</a></li>
           <i class="fa-solid fa-circle-xmark fas" onclick="closemenu()"></i>
         </ul>
         <i class="fa-solid fa-bars fas" onclick="openmenu()"></i>
@@ -38,6 +38,7 @@
       <div id="info">
         <h1>Hi, I am <span style="color: #fca311;">Naveen Kari.</span> </h1>
         <p>Master's in Computer Science | Software Engineer | Frontend & Backend Developer </p>
+        <button id="downloadcv"><a href="images/NaveenkariResumeupda.pdf" download="">Resume</a></button>
 
       </div>
       <div id="myimage">
@@ -48,7 +49,7 @@
   </header>
   <main>
     <!-- ----------------About Section---------------------------- -->
-    <section>
+    <section id="aboutsection">
       <div class="aboutcontainer">
         <div class="aboutimage">
           <img src="images/about me.jpg" alt="">
@@ -171,7 +172,7 @@
 
 
     <!-- -----------------------Project Section ---------------------------------- -->
-    <section class="projectsection">
+    <section id="projectsection1" class="projectsection">
       <div class="projectscontainer ">
         <h1 class="sideheadings">Projects</h1>
         <div class="projectitems">
@@ -184,7 +185,7 @@
                 and accurate payment disbursement.
                 Technologies: HTML, CSS, Flask, MongoDB, Python.
               </p>
-              <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+              <a href="https://github.com/NaveenKari/PayrollManagementSystem"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
             </div>
           </div>
           <div class="projects">
@@ -197,7 +198,7 @@
                 Built a model that demonstrates the above process using ESP devices in which Blockchain server was built
                 using Python for small scale level. Technologies : Python, Arduino, Micro Python, JSON, Flask.
               </p>
-              <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+              <a href="https://github.com/NaveenKari/IOTGUARD-Blockchain-and-cryptoptography-Project"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
             </div>
           </div>
           <div class="projects">
@@ -210,20 +211,18 @@
                 availing home service.
                 Technologies: HTML, CSS, Python, Flask, SQL.
               </p>
-              <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+              <a href="https://github.com/NaveenKari/CommunityManagementSystemProject"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
             </div>
           </div>
           <div class="projects">
-            <img src="images/PMS.webp" alt="">
+            <img src="images/Myntra.png" alt="">
             <div class="layer">
-              <h3>Community Management System</h3>
-              <p>The aim is to simplify life for everyone in a gated community, from residents and management
-                committee to security guards and facility managers.
-                It reduces many hassles like authorizing entry of delivery executives, paying maintenance bills,
-                availing home service.
-                Technologies: HTML, CSS, Python, Flask, SQL.
+              <h3>Myntra Clone</h3>
+              <p>Our Myntra clone, crafted with HTML, CSS, and JavaScript, delivers a seamless e-commerce experience. Featuring responsive design, user-friendly navigation, it ensures efficient shopping. The platform supports a dynamic product display, a smooth checkout process, and user-friendly account management.
+                Technologies: HTML, CSS, Javascript.
               </p>
-              <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+              <a href="https://github.com/NaveenKari/MyntraFunctionalClone"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+              <a href="https://naveenkari.github.io/MyntraFunctionalClone/" style="padding: 5px;">Live</a>
             </div>
           </div>
         </div>
@@ -232,7 +231,7 @@
     </section>
     <!-- ----------------Contact section--------------------------- -->
 
-    <section class="contact">
+    <section id="contact">
       <div class="container">
         <div class="row">
           <div class="contact-left aboutinfo">
@@ -240,28 +239,30 @@
             <p><i class="fa-solid fa-envelope"></i>knaveen.edu2023@gmail.com</p>
             <p><i class="fa-solid fa-phone"></i>9132387387</p>
             <div class="socialmedia-icons">
-              <a href=""><i class="fa-brands fa-linkedin"></i></a>
-              <a href=""><i class="fa-brands fa-github"></i></a>
-              <a href=""><i class="fa-brands fa-twitter"></i></a>
-              <a href=""><i class="fa-brands fa-instagram"></i></a>
+              <a href="https://www.linkedin.com/in/naveen-kari-5a0aba229/"><i class="fa-brands fa-linkedin"></i></a>
+              <a href="https://github.com/NaveenKari"><i class="fa-brands fa-github"></i></a>
+              <a href="https://twitter.com/KariNaveen43600"><i class="fa-brands fa-twitter"></i></a>
+              <a href="https://www.instagram.com/nawin.20.6/"><i class="fa-brands fa-instagram"></i></a>
             </div>
           </div>
           <div class="contact-right">
-            <form action="">
+            <form name="submit-to-google-sheet">
               <input type="text" name="Name" placeholder="Your Name" required>
-              <input type="email" name="email" placeholder="Your Email" required>
+              <input type="email" name="Email" placeholder="Your Email" required>
               <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
               <button type="submit">Submit</button>
 
             </form>
+            <span id="msg"> </span>
 
           </div>
         </div>
       </div>
 
-
+<footer>
     </section>
-
+    <section id="copyright"> <p>Copyright © Made by NaveenKari_2024</p></section>
+  </footer>
 
 
 
@@ -294,7 +295,24 @@
       sidemenu.style.right = "-200px";
     }
   </script>
+<script>
+  const scriptURL = 'https://script.google.com/macros/s/AKfycbx1RtWQcVSCcJfzvYT6eJBsFOYd71173HPg8C6eIgeLdopLKAnih0VpsJuhlI2O7nzz/exec'
+  const form = document.forms['submit-to-google-sheet']
+  const msg = document.querySelector('#msg');
 
+  form.addEventListener('submit', e => {
+    e.preventDefault()
+    fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+      .then(response => {
+        msg.innerHTML = "Message sent successfullyyy!!!";
+        setTimeout(function(){
+          msg.innerHTML = ''
+        },5000);
+        form.reset();
+      })
+      .catch(error => console.error('Error!', error.message))
+  })
+</script>
 </body>
 
 </html>

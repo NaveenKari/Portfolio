@@ -5,6 +5,9 @@
   font-family: 'Poppins',sans-serif;
   box-sizing: border-box;
 }
+html{
+  scroll-behavior: smooth;
+}
 body{
   background-color: #002334;
   color: white;
@@ -63,6 +66,32 @@ nav ul li a:hover{
 .intro{
   display: flex;
   justify-content: space-evenly;
+  margin-top: 40px;
+}
+#downloadcv{
+  margin-top: 80px;
+  margin-bottom: 80px;
+  margin-left: 80px;
+  margin-right: 80px;
+  font-size: 15px;
+  border-radius: 20px;
+  padding: 5px;
+  
+  height: 60px;
+  width: 150px;
+  background-color: rgb(249, 204, 98);
+  transition: 0.5s;
+  
+}
+#downloadcv:hover{
+  background-color: #ff9d00;
+  color: white;
+}
+#downloadcv a{
+  text-decoration: none;
+  color:#002334;
+  font-size: 20px;
+  font-weight: 600;
 }
 #info{
   display: flex;
@@ -107,7 +136,7 @@ nav ul li a:hover{
   margin: 80px; 
   position: relative;
   top: 50px;
-  animation: naveen 2s  ease-in-out 0s 1  alternate;
+  animation: naveen 2s  ease-in-out 0s infinite  alternate;
   animation-fill-mode: forwards;
 }
 /* #myimage{
@@ -135,6 +164,7 @@ nav ul li a:hover{
   justify-content: space-around;
   width: 100%;
   margin-bottom: 60px;
+  height: 60vh;
 }
 .aboutimage{
   width: 350px;
@@ -159,6 +189,8 @@ nav ul li a:hover{
 }
 .aboutinfo p{
   margin: 10px 0px 10px 10px;
+  text-align: justify;
+  text-justify: inter-word;
 
 }
 .sideheadings{
@@ -191,6 +223,8 @@ nav ul li a:hover{
   font-size: 14px;
   margin: 20px;
   color: rgb(215, 210, 210);
+  text-align: justify;
+  text-justify: inter-word;
 
 }
 .tabcontents ul li span{
@@ -201,9 +235,7 @@ nav ul li a:hover{
 }
 
 
-.skillcontainer{
-  display: flex;
-}
+
 .skill{
   margin-left: 60px;
 }
@@ -285,6 +317,7 @@ nav ul li a:hover{
     padding: 10px;
     border: 2px solid white;
     transition: 0.6s;
+    box-shadow: 10px 10px 10px black;
 }
 .projects:hover{
     transform: scale(1.05);
@@ -313,6 +346,8 @@ nav ul li a:hover{
     margin: 5px;
     padding: 5px;
     color: rgba(255, 255, 255, 0.582);
+    text-align: justify;
+    text-justify: inter-word;
 }
 .layer a{
     text-decoration: none;
@@ -337,6 +372,7 @@ nav ul li a:hover{
   display: flex;
   justify-content: space-between;
   margin: 50px ;
+  height: 60vh;
 
 }
 .contact-left{
@@ -401,6 +437,14 @@ form button{
 
 }
 
+#copyright{
+  background-color: #1a506b;
+  padding: 5px;
+  text-align: center;
+  height: 30px;
+  
+}
+
 
 nav .fas{
   display: none;
@@ -440,19 +484,24 @@ nav .fas{
     font-size: 25px;
   
   }
+
   .intro{
     display: flex;
     flex-direction: column-reverse;
     align-items: center;
     justify-content: center;
+    height: 80vh;
+    
     
   }
+
   .aboutcontainer{
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     flex-wrap: nowrap;
+    height: 100vh;
 
  }
  .aboutinfo{
@@ -468,7 +517,7 @@ nav .fas{
   align-items: center;
 }
   #info p{
-    font-size: 14px;
+    font-size: 15px;
     margin: 30px 50px ;
     padding: 10px;
     
@@ -513,6 +562,7 @@ nav .fa-bars{
   right: -15px;
 
 }
+
   .projectitems{
     display: flex;
     flex-direction: column;
@@ -549,5 +599,14 @@ nav .fa-bars{
 form input,form textarea{
   width: 100%;
 }
+#copyright{
+  display: none;
+}
 
+}
+
+#msg{
+  color: #fca311;
+  margin-top: 0px;
+  display: block;
 }
